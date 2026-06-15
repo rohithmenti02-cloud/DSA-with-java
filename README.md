@@ -9,3 +9,13 @@ DSA concepts using java
 -OOP'S
 -multithreading
 -array
+*DSA TOPICS:-
+-Array
+-Linkedlist
+-Stack
+-Queue
+-Trees
+-Graph
+-Sorting Techniques
+-Searching Techniques
+-Algorithm

@@ -1,6 +1,6 @@
 # DSA-with-java
 DSA concepts using java
-15-06-26:
+## 15-06-26:
 -basics of java(sub wise,syntaxes,interview ques)
 -control statements
 -operators
@@ -9,7 +9,7 @@ DSA concepts using java
 -OOP'S
 -multithreading
 -array
-##DSA:TOPICS
+## DSA:TOPICS
 -Array
 -Linkedlist
 -Stack

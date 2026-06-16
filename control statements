@@ -1,1 +1,139 @@
+## Core Theory & Syntaxes of Control Statements in Java
+What are Control Statements?
 
+Control statements determine the flow of execution of a program. They allow a program to make decisions, repeat tasks, and transfer control from one part of the code to another.
+
+Types of Control Statements
+Selection (Decision-Making) Statements
+Iteration (Looping) Statements
+Jump Statements
+A. Selection Statements
+1. if Statement
+
+Used to execute a block of code when a condition is true.
+
+int age = 18;
+
+if(age >= 18) {
+    System.out.println("Eligible to vote");
+}
+2. if-else Statement
+int age = 16;
+
+if(age >= 18) {
+    System.out.println("Eligible");
+} else {
+    System.out.println("Not Eligible");
+}
+3. if-else-if Ladder
+int marks = 85;
+
+if(marks >= 90) {
+    System.out.println("Grade A");
+}
+else if(marks >= 75) {
+    System.out.println("Grade B");
+}
+else {
+    System.out.println("Grade C");
+}
+4. Nested if
+int age = 20;
+boolean hasLicense = true;
+
+if(age >= 18) {
+    if(hasLicense) {
+        System.out.println("Can drive");
+    }
+}
+5. switch Statement
+int day = 3;
+
+switch(day) {
+    case 1:
+        System.out.println("Monday");
+        break;
+
+    case 2:
+        System.out.println("Tuesday");
+        break;
+
+    case 3:
+        System.out.println("Wednesday");
+        break;
+
+    default:
+        System.out.println("Invalid Day");
+}
+Modern Switch Expression (Java 14+)
+int day = 2;
+
+switch(day) {
+    case 1 -> System.out.println("Monday");
+    case 2 -> System.out.println("Tuesday");
+    default -> System.out.println("Invalid");
+}
+B. Iteration Statements
+1. for Loop
+for(int i = 1; i <= 5; i++) {
+    System.out.println(i);
+}
+2. while Loop
+int i = 1;
+
+while(i <= 5) {
+    System.out.println(i);
+    i++;
+}
+3. do-while Loop
+int i = 1;
+
+do {
+    System.out.println(i);
+    i++;
+} while(i <= 5);
+4. Enhanced for Loop
+int arr[] = {10,20,30,40};
+
+for(int num : arr) {
+    System.out.println(num);
+}
+C. Jump Statements
+1. break
+for(int i = 1; i <= 10; i++) {
+    if(i == 5)
+        break;
+
+    System.out.println(i);
+}
+
+Output:
+
+1
+2
+3
+4
+2. continue
+for(int i = 1; i <= 5; i++) {
+    if(i == 3)
+        continue;
+
+    System.out.println(i);
+}
+
+Output:
+
+1
+2
+4
+5
+3. return
+public static int add(int a, int b) {
+    return a + b;
+}
+| Feature             | if-else               | switch                    |
+| ------------------- | --------------------- | ------------------------- |
+| Condition           | Boolean expression    | Constant value            |
+| Multiple Conditions | Yes                   | Limited                   |
+| Readability         | Less for many options | Better                    |
+| Performance         | Slightly slower       | Faster for multiple cases |

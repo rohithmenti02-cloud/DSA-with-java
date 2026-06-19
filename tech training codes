@@ -111,3 +111,13 @@ public class DiamondPattern {
         scanner.close();
     }
 }
+
+
+STRING BULIT-IN FUMCTIONS:
+
+-length()
+-charAt(index)
+-indexof(str)
+-concat(str)
+-toLowerCase()
+-

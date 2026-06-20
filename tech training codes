@@ -121,3 +121,8 @@ STRING BULIT-IN FUMCTIONS:
 -concat(str)
 -toLowerCase()
 -
+
+ 1. Measurement and Extraction
+-length(): Returns total character count.
+-charAt(index): Returns char at specific index.
+-

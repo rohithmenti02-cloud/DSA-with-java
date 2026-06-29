@@ -126,3 +126,43 @@ STRING BULIT-IN FUMCTIONS:
 -length(): Returns total character count.
 -charAt(index): Returns char at specific index.
 -
+
+Queue Operations:
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+       Queue<Integer> eg=new LinkedList();
+       eg.add(10);
+       eg.offer(20);
+       eg.offer(30);
+       eg.offer(40);
+       eg.remove(20);
+       //System.out.println(eg.remove());
+       System.out.println(eg.poll());
+       System.out.println(eg.peek());
+       System.out.println(eg);
+    }
+}
+
+
+Deque Operations:
+
+import java.util.*;
+class Main {
+    public static void main(String[] args) {
+       Deque<Integer> eg=new LinkedList();
+       eg.addFirst(10);
+       eg.offerFirst(20);
+       eg.addLast(30);
+       eg.offerLast(40);
+       System.out.println(eg);
+       eg.removeFirst();//eg,pollFirst(); is same
+       System.out.println(eg);
+       eg.removeLast();//eg.pollLast(); is same
+       System.out.println(eg);
+       System.out.println(eg.peekFirst());
+       System.out.println(eg.peekLast());
+       System.out.println(eg);
+    }
+}
